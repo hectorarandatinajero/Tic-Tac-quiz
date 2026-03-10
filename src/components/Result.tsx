@@ -34,10 +34,10 @@ const Result = ({ result }: Props) => {
   };
 
   const messages2: Record<TiktakType, string> = {
-    naranja: "Energético y extrovertido!! 🍊",
-    fresa: "Dulce, amoroso y divertido!! 🍓",
-    frutas: "Vibrante jugueton y frutal!! 🍈🍓🍊🥭",
-    menta: "Unique, mysterious, and original!! 🍃",
+    naranja: "Alegre, sociable y espontáneo!! 🍊",
+    fresa: "Dulce, seguro y trendy!! 🍓",
+    frutas: "Extrovertido, aventurero y energético!! 🍈🍓🍊🥭",
+    menta: "Fresco, confiado y moderno!! 🍃",
   };
 
 

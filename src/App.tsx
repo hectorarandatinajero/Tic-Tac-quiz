@@ -94,8 +94,8 @@ function App() {
     };
 
     Object.values(answers).forEach((answer) => {
-      if (answer) scores[answer]++;
-    });
+  if (answer) scores[answer as TiktakType]++;
+});
 
     return Object.keys(scores).reduce((a, b) =>
       scores[a as TiktakType] > scores[b as TiktakType] ? a : b

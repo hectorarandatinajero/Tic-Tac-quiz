@@ -1,0 +1,193 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.app-logo {
+  width: 200px;
+  max-width: none;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.next-button {
+  animation: fadeInUp 0.4s ease;
+  background: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.next-button:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg,#3cbd2d,#7dff6c);
+  transition: width 0.4s ease;
+  border-radius: 999px;
+}
+
+.page-transition {
+  animation: questionFade 0.45s ease;
+}
+
+@keyframes questionFade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-screen {
+  margin-top: 40px;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 12px;
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loading-fill {
+  height: 100%;
+  background: linear-gradient(90deg,#3cbd2d,#7dff6c);
+  animation: loadingAnim 2s linear forwards;
+}
+
+@keyframes loadingAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.pill {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  z-index: 9998;
+
+  animation: fall 1.2s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(120px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.tictac-pill {
+  position: fixed;
+
+  width: 30px;
+  height: 15px;
+
+  border-radius: 20px;
+
+  pointer-events: none;
+
+  background-image: none !important;
+  background-color: #3cbd2d;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+
+  animation: pillFall linear forwards;
+}
+
+@keyframes pillFall {
+
+  0% {
+    transform: translate(0px,0px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(var(--x), var(--y)) rotate(360deg) scale(0.7);
+    opacity: 0;
+  }
+
+}

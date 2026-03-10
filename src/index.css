@@ -1,0 +1,114 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+
+  color-scheme: light dark;
+  color: rgba(59, 58, 58, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-image: url("./assets/ROP.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 4px solid #000000;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+}
+button:hover {
+  background-color: #3cbd2d;
+  border-color: #3cbd2d;
+  color: white;
+
+  box-shadow:
+    0 0 10px #3cbd2d,
+    0 0 20px rgba(46, 204, 113, 0.4);
+
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 0 6px #3cbd2d;
+}
+
+button.selected {
+  background-color: #3cbd2d;
+  border-color: #3cbd2d;
+  color: white;
+  box-shadow:
+    0 0 10px #3cbd2d,
+    0 0 20px rgba(46, 204, 113, 0.4);
+}
+
+button:focus{
+    outline: none;
+  box-shadow: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #3cbd2d;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: transparent;
+    color: black;
+  }
+}
